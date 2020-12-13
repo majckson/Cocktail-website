@@ -1,3 +1,7 @@
 * {
-    outline: #2873b9;
+    outline: 1px  #47b4b4 solid;
 }
+p {
+    color: red;
+}
+
