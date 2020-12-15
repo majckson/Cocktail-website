@@ -5,6 +5,15 @@ body {
     background-color: rgb(230, 159, 72);
 }
 
+#content {
+    position: relative;
+    padding: 1rem;
+    padding-bottom: 10vh;
+    border-radius: 5%;
+    margin: auto;
+    width: 70%;
+}
+
 p {
     color: rgb(202, 29, 29);
 }
