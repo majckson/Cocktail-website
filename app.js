@@ -6,28 +6,37 @@ console.log(myVariableName);
 myVariableName = "login";
 console.log(myVariableName);
 
-var promptQuestion = "Are you over 21?";
-var response = prompt(promptQuestion);
-response = response.toLowerCase();
-console.log(response);
 
-var alertMessage = "";
-var color;
 
-if (response === "yes") {
-    alertMessage = "Perfect! Welcome";
-} else  {
-    alertMessage = "Go find your adult";
-    promptQuestion = "Have you found an adult yet?";
-    while (response.toLowerCase() != "yes"){
-        response = prompt(promptQuestion);
+
+
+
+function myPrompt(newPrompt, accept, reject){
+    var response = prompt(newPrompt);
+    response = response.toLowerCase();
+    console.log(response);
+
+    var alertMessage = "";
+
+    if (response === "yes") {
+        alertMessage = accept;
+    } else  {
+        alertMessage = reject;
+
+        while (response.toLowerCase() != "yes"){
+            response = prompt(newPrompt);
+        }
+        alertMessage = accept;
     }
-    alertMessage = "Perfect! Welcome";
+    return alertMessage;
 }
 
-alert(alertMessage);
+var alertMessageFinal = myPrompt("Are you over 21?", "Welcome!", "GTFO")
+
+alert(alertMessageFinal);
 
 var element = document.getElementById('Top');
 
-element.innerText = alertMessage;
-element.style.color = color;
+element.innerText = alertMessageFinal;
+//element.style.color = color;
+//var temp = myPrompt("Is Hazel a dork?", "I agree", "Try again")
