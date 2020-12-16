@@ -13,10 +13,10 @@ console.log(response);
 var alertMessage;
 var color;
 
-if (response === "yes") {alertMessage = "Perfect! Welcome";
-color = #32a832
-} else if (response === "no") {alertMessage = "Go find your adult"
-color = #c92c2c;
+if (response === "yes") {
+    alertMessage = "Perfect! Welcome";
+} else if (response === "no") {
+    alertMessage = "Go find your adult";
 }
 
 
