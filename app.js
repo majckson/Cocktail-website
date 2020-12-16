@@ -8,22 +8,26 @@ console.log(myVariableName);
 
 var promptQuestion = "Are you over 21?";
 var response = prompt(promptQuestion);
+response = response.toLowerCase();
 console.log(response);
 
-var alertMessage;
+var alertMessage = "";
 var color;
 
 if (response === "yes") {
     alertMessage = "Perfect! Welcome";
-} else if (response === "no") {
+} else  {
     alertMessage = "Go find your adult";
+    promptQuestion = "Have you found an adult yet?";
+    while (response.toLowerCase() != "yes"){
+        response = prompt(promptQuestion);
+    }
+    alertMessage = "Perfect! Welcome";
 }
-
 
 alert(alertMessage);
 
-var element = document.getElementById
-('response-output') 
+var element = document.getElementById('Top');
 
 element.innerText = alertMessage;
-element.style.color = color 
+element.style.color = color;
