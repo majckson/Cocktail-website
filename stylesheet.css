@@ -14,7 +14,27 @@ body {
     width: 70%;
 }
 
+.header {
+    background-color: rgb(146, 15, 15);
+    font-size: xx-large;
+    color: rgb(23, 160, 85);
+    text-align: center;
+}
+
+.drink {
+    background-color: rgb(179, 123, 80);
+    color: rgb(30, 104, 62);
+    border: 2px solid black;  
+    text-align: center;
+    font-size: x-large;
+}
+
 p {
     color: rgb(202, 29, 29);
 }
 
+.ingredient {
+    background-color: rgb(204, 137, 59);
+    font-size: medium;
+    color: darkred;
+}
