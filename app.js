@@ -51,9 +51,9 @@ function validate(){
 
 
 function rptPic(){
-    var numberOfPic = prompt("How many glasses of eggnog would you like?");
+    var numberOfPic = prompt("How many glasses of water would you like before you leave?");
     for (var i = 0; i < numberOfPic; i++){
-        document.write("<img src=\"Pictures/eggnog.jpeg\">");
+        document.write("<img src=\"Pictures/water.jpg\">");
     }
 }
 
