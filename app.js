@@ -47,3 +47,12 @@ function validate(){
 }
 
 validate();
+
+function rptPic(){
+    var numberOfPic = prompt("How many glasses of eggnog would you like?");
+    for (var i = 0; i < numberOfPic; i++){
+        document.write("<img src=\"Pictures/eggnog.jpeg\">");
+    }
+}
+
+rptPic();
