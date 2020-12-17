@@ -1,5 +1,7 @@
 console.log("Welcome");
 
+validate();
+
 var myVariableName = "Welcome";
 console.log(myVariableName);
 
@@ -46,7 +48,7 @@ function validate(){
     }while (pasword !== code);
 }
 
-validate();
+
 
 function rptPic(){
     var numberOfPic = prompt("How many glasses of eggnog would you like?");
