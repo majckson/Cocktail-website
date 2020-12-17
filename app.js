@@ -37,3 +37,13 @@ myPrompt("Are you over 21?", "Welcome!", "GTFO")
 
 var temp2 = myPrompt("Are you ready for the Holidays?", "Cool Cool", "Ok, Grinch" )
 console.log(temp2);
+
+function validate(){
+    var code = "DD";
+    console.log(code);
+    do{
+        var pasword = prompt("What does every responsible drinker need?");
+    }while (pasword !== code);
+}
+
+validate();
